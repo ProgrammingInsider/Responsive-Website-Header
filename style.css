@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ text-decoration: none;   
+}
+
+body{
+    font-family: 'Roboto Serif', serif;
+    background-color: #303841;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.overlay{
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header{
+    height: 70px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    position: relative;
+    z-index: 100;
+}
+
+.logo-img{
+    width: 100px;
+}
+
+.nav-container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .1em .3em;
+    height: 0;
+    overflow: hidden;
+}
+
+.showNav{
+    height: auto;
+}
+
+.nav-link{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: #135FB1;
+}
+
+.login-btn{
+    background: #0076A3;
+    text-transform: capitalize;
+    padding: 1em;
+    font-size: .9em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    width: 100px
+}
+
+.login-btn:hover{
+    color: white;
+}
+
+#menu-bars{
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+}
+
+@media screen and (min-width:950px) {
+    #menu-bars{
+        display: none;
+    }
+    .nav-container{
+        background-color: transparent;
+        position: relative;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        padding: 0em;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+       .nav-link{
+        margin-left: 2em;
+    }
+
+    .login-btn{
+        margin-left: 3em;
+    }
+}

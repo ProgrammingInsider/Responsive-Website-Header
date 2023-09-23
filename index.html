@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="./style.css"/>
+<script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="overlay"></div>
+     <header>
+        <img src="./img/logo.png" class="logo-img"/>
+
+        <nav class="nav-container" id="nav-container">
+            <a class="nav-link">Home</a>
+            <a class="nav-link">Services</a>
+            <a class="nav-link">Features</a>
+            <a class="nav-link">Pricing</a>
+            <a class="nav-link">Application</a>
+            <a class="nav-link">Team</a>
+            <a class="nav-link">Contact</a>
+            <a class="nav-link btn login-btn">Login</a>   
+        </nav>
+        <i class="fa-solid fa-bars" id="menu-bars"></i>
+     </header>
+     <div class="hero">
+          <h1>Responsive Website Header</h1>
+     </div>
+
+     <script defer>
+           const menu = document.getElementById("menu-bars");
+           const nav = document.getElementById("nav-container");
+           
+           menu.onclick = () => {
+                nav.classList.toggle("showNav");
+           }
+     </script>
+</body>
+</html>
